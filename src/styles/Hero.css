@@ -1,0 +1,80 @@
+.hero {
+  width: 100%;
+  min-height: 100vh;
+
+ 
+  background-image: url('/images/hero-coffee.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  padding: 100px 60px;
+  position: relative;
+}
+
+.hero-content {
+  max-width: 600px;
+  z-index: 2;
+}
+
+.hero-welcome {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--text-white);
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+.hero-title {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 72px;
+  color: var(--text-white);
+  line-height: 1.1;
+  margin-bottom: 30px;
+}
+
+.hero-subtitle {
+  font-family: 'Outfit', sans-serif;
+  font-size: 18px;
+  color: var(--text-white);
+  margin-bottom: 40px;
+  max-width: 500px;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-content > * {
+  opacity: 0;
+  animation: fadeUp 1s ease forwards;
+}
+
+
+.hero-welcome {
+  animation-delay: 0.2s;
+}
+
+.hero-title {
+  animation-delay: 0.5s;
+}
+
+.hero-subtitle {
+  animation-delay: 0.8s;
+}
+
+.hero-content button {
+  animation-delay: 1.1s;
+}

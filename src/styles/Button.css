@@ -1,0 +1,50 @@
+.btn {
+  font-family: 'Outfit', sans-serif;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 50px;
+  font-weight: 500;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+.btn-primary {
+  background-color: var(--text-white);
+  color: var(--text-dark);
+  font-size: 18px;
+  padding: 14px 32px;
+}
+
+.btn-secondary {
+  background-color: var(--button-brown);
+  color: var(--text-white);
+  font-size: 16px;
+  padding: 12px 28px;
+}
+
+.btn-small {
+  font-size: 14px;
+  padding: 10px 24px;
+}
+
+.btn-medium {
+  font-size: 18px;
+  padding: 14px 32px;
+}
+
+.btn-icon {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 4px;
+}

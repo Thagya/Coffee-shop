@@ -1,0 +1,58 @@
+/* SECTION BACKGROUND */
+.promo-section {
+  background-color: #f8e7b0; /* light-yellow like your screenshot */
+  padding: 0;
+}
+
+/* FULL-WIDTH WRAPPER */
+.promo-container {
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* LEFT + RIGHT IMAGES */
+.promo-image {
+  width: 33.33%;      /* each image takes 1/3 width */
+  height: 350px;
+  overflow: hidden;
+}
+
+.promo-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* CENTER CONTENT */
+.promo-content {
+  width: 33.33%;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.promo-title {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  font-size: 32px;
+  color: #000;
+  margin-bottom: 25px;
+}
+
+/* MOBILE */
+@media (max-width: 1024px) {
+  .promo-container {
+    flex-direction: column;
+  }
+
+  .promo-image,
+  .promo-content {
+    width: 100%;
+  }
+
+  .promo-image {
+    height: 250px;
+  }
+}

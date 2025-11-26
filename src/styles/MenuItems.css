@@ -1,0 +1,92 @@
+.menu-items {
+  background-color: var(--cream-bg);
+  padding: 100px 60px;
+}
+
+.menu-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.menu-title {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  font-size: 32px;
+  color: var(--text-dark);
+  text-align: center;
+  margin-bottom: 60px;
+  letter-spacing: 1px;
+}
+
+.menu-carousel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.carousel-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--button-brown);
+  color: var(--text-white);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.carousel-btn:hover {
+  transform: scale(1.1);
+  background-color: var(--dark-brown);
+}
+
+.carousel-btn:active {
+  transform: scale(0.95);
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  flex: 1;
+}
+
+@media (max-width: 1400px) {
+  .products-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 1024px) {
+  .menu-items {
+    padding: 80px 30px;
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .carousel-btn {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-items {
+    padding: 60px 30px;
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .menu-carousel {
+    gap: 15px;
+  }
+}
